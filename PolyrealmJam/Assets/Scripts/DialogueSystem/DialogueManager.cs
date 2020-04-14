@@ -40,6 +40,14 @@ public class DialogueManager : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            DisplayNextSentence();
+        }
+    }
+
     private void Start()
     {
         sentences = new Queue<string>();
@@ -50,8 +58,10 @@ public class DialogueManager : MonoBehaviour
     public void StartConversation(Dialogue _dialogues, string _speakerName)
     {
         OnDialogueStart?.Invoke();
+
         isEnabled = DIALOGUE_ENABLED;
         speakerName.text = _speakerName;
+
         sentences.Clear();
         foreach (var dialogue in _dialogues.sentences)
         {

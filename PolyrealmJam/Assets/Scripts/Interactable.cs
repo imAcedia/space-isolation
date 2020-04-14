@@ -6,7 +6,7 @@ public class Interactable : MonoBehaviour
 {
     [SerializeField] Dialogue interactDialogue = null;
 
-    private DialogueManager dialogueManager;
+    public DialogueManager dialogueManager { get; private set; }
 
     private void Start()
     {
