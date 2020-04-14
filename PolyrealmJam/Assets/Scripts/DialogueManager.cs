@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-
 public class DialogueManager : MonoBehaviour
 {
     #region Constants
@@ -109,8 +107,6 @@ public class DialogueManager : MonoBehaviour
                 isTyping = false;
             }
         }
-
- 
     }
     #endregion
 
