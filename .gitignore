@@ -58,3 +58,8 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+PolyrealmJam/.vs/PolyrealmJam/v16/Server/sqlite3/storage.ide
+PolyrealmJam/.vs/PolyrealmJam/v16/Server/sqlite3/db.lock
+PolyrealmJam/.vs/PolyrealmJam/v16/Server/sqlite3/storage.ide-wal
+PolyrealmJam/.vs/PolyrealmJam/v16/Server/sqlite3/storage.ide-shm
+PolyrealmJam/ProjectSettings/ProjectVersion.txt
