@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Text = TMPro.TextMeshProUGUI;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -11,8 +12,8 @@ public class DialogueManager : MonoBehaviour
     public const bool DIALOGUE_DISABLED = false;
     #endregion
 
-    public event Action OnStartDialogue;
-    public event Action OnEndedDialogue;
+    public event Action OnDialogueStart;
+    public event Action OnDialogueEnd;
 
     public Queue<string> sentences;
 
@@ -48,7 +49,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartConversation(Dialogue _dialogues, string _speakerName)
     {
-        OnStartDialogue?.Invoke();
+        OnDialogueStart?.Invoke();
         isEnabled = DIALOGUE_ENABLED;
         speakerName.text = _speakerName;
         sentences.Clear();
@@ -85,7 +86,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        OnEndedDialogue?.Invoke();
+        OnDialogueEnd?.Invoke();
         isEnabled = DIALOGUE_DISABLED;
 
         VisualizeTextBox();

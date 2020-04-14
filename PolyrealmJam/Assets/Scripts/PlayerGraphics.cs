@@ -17,12 +17,12 @@ public class PlayerGraphics : MonoBehaviour
 
     private void Update()
     {
-        if (movement.input > 0f)
+        if (movement.moveInput > 0f)
             spriteRenderer.flipX = true;
 
-        if (movement.input < 0f)
+        if (movement.moveInput < 0f)
             spriteRenderer.flipX = false;
 
-        animator.SetBool("moving", Mathf.Abs(movement.input) > 0f);
+        animator.SetBool("moving", Mathf.Abs(movement.moveInput) > 0f);
     }
 }
