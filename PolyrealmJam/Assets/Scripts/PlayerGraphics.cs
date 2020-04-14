@@ -4,21 +4,25 @@ using UnityEngine;
 
 public class PlayerGraphics : MonoBehaviour
 {
-    private PlayerMovement movement;
+    [SerializeField] PlayerMovement movement = null;
 
-    [SerializeField] SpriteRenderer spriteRenderer;
+    private SpriteRenderer spriteRenderer = null;
+    private Animator animator = null;
 
     private void Awake()
     {
-        movement = GetComponent<PlayerMovement>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
         if (movement.input > 0f)
-            spriteRenderer.flipY = true;
+            spriteRenderer.flipX = true;
 
         if (movement.input < 0f)
-            spriteRenderer.flipY = false;
+            spriteRenderer.flipX = false;
+
+        animator.SetBool("moving", Mathf.Abs(movement.input) > 0f);
     }
 }
