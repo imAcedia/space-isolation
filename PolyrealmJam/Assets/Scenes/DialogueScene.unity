@@ -1141,8 +1141,10 @@ MonoBehaviour:
   dialoguePanel: {fileID: 648164251}
   speakerName: {fileID: 2018388352}
   dialogueSentece: {fileID: 1608522011}
-  typeDelay: 0.1
+  typeDelay: 1
   isEnabled: 0
+  isTyping: 0
+  currentSentence: 
 --- !u!1 &1608522009
 GameObject:
   m_ObjectHideFlags: 0
