@@ -14,8 +14,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Interactable
+  - Ladder
   - 
   - 
   - 
@@ -40,8 +40,14 @@ TagManager:
   - 
   m_SortingLayers:
   - name: Background
-    uniqueID: 108429171
+    uniqueID: 3864973339
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Characters
+    uniqueID: 612565993
+    locked: 0
+  - name: UI
+    uniqueID: 108429171
     locked: 0

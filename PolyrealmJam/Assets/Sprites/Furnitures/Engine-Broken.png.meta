@@ -1,0 +1,319 @@
+fileFormatVersion: 2
+guid: 45f23b5107599d445be43f193cb3f722
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5187607992882109868
+    second: EngineBrokenAnimationSheet_0
+  - first:
+      213: 2597962167315317987
+    second: EngineBrokenAnimationSheet_1
+  - first:
+      213: 4295716478477846244
+    second: EngineBrokenAnimationSheet_2
+  - first:
+      213: 8899909313577604235
+    second: EngineBrokenAnimationSheet_3
+  - first:
+      213: -6891389315609418662
+    second: Engine-Broken_0
+  - first:
+      213: -8577228696280643352
+    second: Engine-Broken_1
+  - first:
+      213: 8091429501983390067
+    second: Engine-Broken_2
+  - first:
+      213: 3837520045052148479
+    second: Engine-Broken_3
+  - first:
+      213: 4940251019617507502
+    second: Engine-Broken_4
+  - first:
+      213: 6540252549645251295
+    second: Engine-Broken_5
+  - first:
+      213: 5513019383404815185
+    second: Engine-Broken_6
+  - first:
+      213: 2260955499183184842
+    second: Engine-Broken_7
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Engine-Broken_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 22
+        width: 67
+        height: 22
+      alignment: 9
+      pivot: {x: 0.4925373, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87dec55567af1174eb842b4d9a97c5dd
+      internalID: -6891389315609418662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engine-Broken_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 22
+        width: 67
+        height: 22
+      alignment: 9
+      pivot: {x: 0.4925373, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b47432b9c413ed54c88f284e03613bbf
+      internalID: -8577228696280643352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engine-Broken_2
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 22
+        width: 67
+        height: 22
+      alignment: 9
+      pivot: {x: 0.4925373, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82877c182a77164895eb14dfbde23a6
+      internalID: 8091429501983390067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engine-Broken_3
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 22
+        width: 67
+        height: 22
+      alignment: 9
+      pivot: {x: 0.4925373, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90373427e8cd55244a48975f9a3d7a20
+      internalID: 3837520045052148479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engine-Broken_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 67
+        height: 22
+      alignment: 9
+      pivot: {x: 0.4925373, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e7c47b9828db24ea0d998923ec463a
+      internalID: 4940251019617507502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engine-Broken_5
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 67
+        height: 22
+      alignment: 9
+      pivot: {x: 0.4925373, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207e86c4b2e72d244ab3872a0495c97f
+      internalID: 6540252549645251295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engine-Broken_6
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 0
+        width: 67
+        height: 22
+      alignment: 9
+      pivot: {x: 0.4925373, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a06afe3e8a3d9244acd9fae64c88501
+      internalID: 5513019383404815185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engine-Broken_7
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 0
+        width: 67
+        height: 22
+      alignment: 9
+      pivot: {x: 0.4925373, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf1d89940a02124a95288b5e2ae8e12
+      internalID: 2260955499183184842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

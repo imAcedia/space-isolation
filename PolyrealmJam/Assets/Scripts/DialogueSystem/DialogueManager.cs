@@ -12,6 +12,28 @@ public class DialogueManager : MonoBehaviour
     public const bool DIALOGUE_DISABLED = false;
     #endregion
 
+    #region Statics
+
+    private static DialogueManager activeManager = null;
+
+    public static DialogueManager ActiveManager
+    {
+        get
+        {
+            if (activeManager == null)
+                activeManager = FindObjectOfType<DialogueManager>();
+
+            if (activeManager == null)
+                Debug.LogErrorFormat("Cannot find DialogueManager in the game. Please make sure there is initialized DialogueManager.");
+
+            return activeManager;
+        }
+
+        set => activeManager = value;
+    }
+
+    #endregion
+
     public event Action OnDialogueStart;
     public event Action OnDialogueEnd;
 
