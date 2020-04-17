@@ -1927,6 +1927,11 @@ PrefabInstance:
       propertyPath: m_ExposedReferences.m_References.Array.data[1].second
       value: 
       objectReference: {fileID: 1264710794}
+    - target: {fileID: 5690336227057944321, guid: 7a348ea230da66a40a312333595b64c6,
+        type: 3}
+      propertyPath: m_InitialState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5690336227057944323, guid: 7a348ea230da66a40a312333595b64c6,
         type: 3}
       propertyPath: m_Name
@@ -4694,5 +4699,10 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[3].value
       value: 
       objectReference: {fileID: 2039500595}
+    - target: {fileID: 25777778801016543, guid: 4e68b9eb9d2eb0245b026a57ac4a7644,
+        type: 3}
+      propertyPath: m_InitialState
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e68b9eb9d2eb0245b026a57ac4a7644, type: 3}
