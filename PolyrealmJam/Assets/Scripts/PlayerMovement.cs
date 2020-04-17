@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(Vector2.right * dir * speed * Time.deltaTime);
     }
 
-    private void CheckInteractionInput(Interactable i)
+    private void CheckInteractionInput(Interactables i)
     {
         if (interactInput)
         {
@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag(interactableTag))
         {
-            CheckInteractionInput(other.gameObject.GetComponent<Interactable>());
+            CheckInteractionInput(other.gameObject.GetComponent<Interactables>());
         }
     }
 }
