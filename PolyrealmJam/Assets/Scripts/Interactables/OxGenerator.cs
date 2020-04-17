@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class OxGenerator : Interactable
 {
+    public Animator oxGenAnimator;
+
     public Dialogue fixDialogue;
     public Dialogue turnOnDialogue;
 
@@ -36,6 +38,12 @@ public class OxGenerator : Interactable
     }
 
     public override bool CanInteract => (!GameStats.Instance.oxygenGenerator.isOn) || (!GameStats.Instance.oxygenGenerator.isFixed);
+
+    private void Update()
+    {
+        oxGenAnimator.SetBool("broken", !GameStats.Instance.oxygenGenerator.isFixed);
+        oxGenAnimator.SetBool("on", GameStats.Instance.oxygenGenerator.isOn);
+    }
 
     public override void Interact(PlayerInput player)
     {

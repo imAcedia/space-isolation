@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oxGenBroken: 0
   navBroken: 0
-  materializerBroken: 0
+  materializerBroken: 1

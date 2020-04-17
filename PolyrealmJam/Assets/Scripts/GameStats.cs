@@ -32,12 +32,23 @@ public class GameStats : MonoBehaviour
         public bool isFixed;
     }
 
-    public float power = 1f;
+    public int currentDays = 1;
+
+    public float powerLevel = 1f;
     public float oxygenLevel = 1f;
     public int availableAction = 5;
     public bool haveEaten = true;
+    public int powerCell = 0;
+
+    public DayData[] dayDatas = new DayData[0];
 
     public static string playerName = "Bryan";
+
+    public Machine engine = new Machine()
+    {
+        isOn = false,
+        isFixed = false,
+    };
 
     public Machine oxygenGenerator = new Machine()
     {
@@ -57,9 +68,9 @@ public class GameStats : MonoBehaviour
         isFixed = false,
     };
 
-    public bool SurvivedNextDay()
+    public bool SurvivedTheDay()
     {
-        if (power <= 0f)
+        if (powerLevel <= 0f)
             return false;
 
         if (oxygenLevel < .2f)
@@ -69,5 +80,45 @@ public class GameStats : MonoBehaviour
             return false;
 
         return true;
+    }
+
+    public void NextDay()
+    {
+        StartCoroutine(NextDayCo());
+    }
+
+    private IEnumerator NextDayCo()
+    {
+        
+
+        if (!SurvivedTheDay())
+        {
+            GameOver();
+            yield break;
+        }
+
+        currentDays++;
+
+        if (currentDays >= dayDatas.Length)
+        {
+            EndGame();
+            yield break;
+        }
+
+        DayData currentDayData = dayDatas[currentDays];
+
+        if (currentDayData.navBroken) navigationSystem.isFixed = false;
+        if (currentDayData.oxGenBroken) oxygenGenerator.isFixed = false;
+        if (currentDayData.materializerBroken) materializer.isFixed = false;
+    }
+
+    public void GameOver()
+    {
+
+    }
+
+    public void EndGame()
+    {
+
     }
 }

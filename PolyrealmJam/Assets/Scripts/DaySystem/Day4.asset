@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a9156b81f58daf40bd0146f8929b97c, type: 3}
   m_Name: Day4
   m_EditorClassIdentifier: 
-  oxGenBroken: 1
-  navBroken: 1
+  oxGenBroken: 0
+  navBroken: 0
   materializerBroken: 0

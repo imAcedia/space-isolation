@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Day5
   m_EditorClassIdentifier: 
   oxGenBroken: 1
-  navBroken: 1
+  navBroken: 0
   materializerBroken: 0

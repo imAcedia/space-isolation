@@ -9,7 +9,7 @@ AnimatorTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Broken
+    m_ConditionEvent: broken
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 9002082753766824103}
@@ -54,7 +54,7 @@ AnimatorTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: On
+    m_ConditionEvent: on
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1991356081949173709}
@@ -71,7 +71,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: Broken
+    m_ConditionEvent: broken
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 151040757167768773}
   m_DstState: {fileID: 0}
@@ -150,13 +150,13 @@ AnimatorController:
   m_Name: Machines
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: On
+  - m_Name: on
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: Broken
+  - m_Name: broken
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -211,7 +211,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: On
+    m_ConditionEvent: on
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2123403457184072386}
@@ -236,7 +236,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: On
+    m_ConditionEvent: on
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1991356081949173709}
@@ -261,7 +261,7 @@ AnimatorTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: On
+    m_ConditionEvent: on
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2123403457184072386}
