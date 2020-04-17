@@ -16,10 +16,16 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 velocity;
 
     private Ladder climbedLadder = null;
+    SoundSystem soundSystem;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Start()
+    {
+        soundSystem = FindObjectOfType<SoundSystem>();
     }
 
     private void FixedUpdate()
@@ -37,6 +43,16 @@ public class PlayerMovement : MonoBehaviour
             ClimbLadder();
 
         rb.velocity = velocity;
+
+        if (velocity.x > 0 || velocity.x < 0)
+        {
+            StartCoroutine(soundSystem.PlaySfxAsync("walk"));
+        }
+        else
+        {
+            StartCoroutine(soundSystem.PlaySfxAsync(state:false));
+        }
+
     }
 
     private void ClimbLadder()
@@ -69,14 +85,21 @@ public class PlayerMovement : MonoBehaviour
 
         if (moveInput.y > 0f)
         {
+            StartCoroutine(soundSystem.PlaySfxAsync("climb"));
             if (transform.position.y >= climbedLadder.HighestLevel)
                 velocity.y = 0f;
         }
 
         if (moveInput.y < 0f)
         {
+            StartCoroutine(soundSystem.PlaySfxAsync("climb"));
             if (transform.position.y <= climbedLadder.LowestLevel)
                 velocity.y = 0f;
+        }
+        
+        else
+        {
+            StartCoroutine(soundSystem.PlaySfxAsync(state: false));
         }
     }
 

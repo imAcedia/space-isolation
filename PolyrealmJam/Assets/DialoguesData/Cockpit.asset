@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c756a7a70a35a58408e9e406c51bbbd8, type: 3}
-  m_Name: OxGenTurnOn
+  m_Name: Cockpit
   m_EditorClassIdentifier: 
-  sequenceName: OxGenTurnOn
+  sequenceName: Cockpit
   sentences:
-  - Oxygen turned on
-  - Oxygen level increased by 30%
+  - Navigation system turned on...

@@ -6,14 +6,16 @@ using UnityEngine.Playables;
 
 public class TimelineManager : MonoBehaviour
 {
-    public List<PlayableDirector> playableDirector;
+    [SerializeField] List<PlayableDirector> playableDirector;
+    public PlayableDirector currentDirector;
 
-    [SerializeField] PlayableDirector currentDirector;
     [SerializeField] bool isPlayingScene;
 
     public void PlayCutscene(int cutSceneIndex)
     {
-        playableDirector[cutSceneIndex].Play();
+        //ayableDirector[cutSceneIndex].Play();
+        currentDirector = playableDirector[cutSceneIndex];
+        currentDirector.Play();
     }
 
     public void PlayChainedCutScene()
