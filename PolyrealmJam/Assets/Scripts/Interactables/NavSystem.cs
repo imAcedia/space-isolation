@@ -52,6 +52,7 @@ public class NavSystem : Interactable
         }
         else if (!GameStats.Instance.navigationSystem.isOn)
         {
+            GameStats.Instance.AvailableAction--;
             StartCoroutine(TurnOnNavigation(player));
         }
     }

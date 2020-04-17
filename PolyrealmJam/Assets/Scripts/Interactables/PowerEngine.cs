@@ -53,10 +53,12 @@ public class PowerEngine : Interactable
     {
         if (!GameStats.Instance.engine.isFixed)
         {
+            GameStats.Instance.AvailableAction -= 2;
             StartCoroutine(FixEngine(player));
         }
         else if (GameStats.Instance.powerCell > 0)
         {
+            GameStats.Instance.AvailableAction--;
             StartCoroutine(AddPowerCell(player));
         }
     }

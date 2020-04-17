@@ -55,10 +55,13 @@ public class Materializer : Interactable
     {
         if (!GameStats.Instance.engine.isFixed)
         {
+            GameStats.Instance.AvailableAction -= 2;
             StartCoroutine(FixEngine(player));
         }
         else if (GameStats.Instance.powerLevel > 0.05f)
         {
+            GameStats.Instance.AvailableAction--;
+
             if (GameStats.Instance.haveEaten)
                 StartCoroutine(MakePowerCell(player));
 
@@ -81,6 +84,7 @@ public class Materializer : Interactable
 
     private IEnumerator MakePowerCell(PlayerInput player)
     {
+        GameStats.Instance.AvailableAction--;
         player.isInteracting = true;
 
         player.isUsing = true;
@@ -99,6 +103,8 @@ public class Materializer : Interactable
         GameStats.Instance.powerLevel -= .05f;
     }
 
+    public new AudioSource audio;
+
     private IEnumerator MakeFood(PlayerInput player)
     {
         player.isInteracting = true;
@@ -107,9 +113,13 @@ public class Materializer : Interactable
         yield return new WaitForSeconds(1f);
         player.isUsing = false;
 
+        audio.Play();
+
         materializerAnimator.SetBool("on", true);
         yield return new WaitForSeconds(3f);
         materializerAnimator.SetBool("on", false);
+
+        audio.Stop();
 
         player.isInteracting = false;
 

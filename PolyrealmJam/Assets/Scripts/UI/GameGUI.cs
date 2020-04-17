@@ -31,12 +31,19 @@ public class GameGUI : MonoBehaviour
     [SerializeField] Color fillFedColor;
     [SerializeField] Color barFedColor;
 
+    [Header("Days")]
+    [SerializeField] Text daysText;
+
+
     private void Update()
     {
         UpdateEnergy();
         UpdateOxy();
         UpdateAction();
         UpdateHunger();
+
+        if (GameStats.Instance == null) return;
+        daysText.text = "Day " + GameStats.Instance.currentDays;
     }
 
     private void UpdateEnergy()
@@ -63,7 +70,7 @@ public class GameGUI : MonoBehaviour
     {
         for (int i = 0; i < actionDots.Count; i++)
         {
-            if (i < GameStats.Instance.availableAction)
+            if (i < GameStats.Instance.AvailableAction)
                 actionDots[i].sprite = actionOnSprite;
 
             else

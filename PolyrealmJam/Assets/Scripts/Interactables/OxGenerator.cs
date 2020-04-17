@@ -49,10 +49,12 @@ public class OxGenerator : Interactable
     {
         if (!GameStats.Instance.oxygenGenerator.isFixed)
         {
+            GameStats.Instance.AvailableAction -= 2;
             StartCoroutine(FixGenerator(player));
         }
         else if (!GameStats.Instance.oxygenGenerator.isOn)
         {
+            GameStats.Instance.AvailableAction--;
             StartCoroutine(TurnOnGenerator(player));
         }
     }

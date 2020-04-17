@@ -45,6 +45,7 @@ public class Terminal : Interactable
     {
         if (!GameStats.Instance.navigationSystem.isFixed)
         {
+            GameStats.Instance.AvailableAction -= 2;
             StartCoroutine(FixTerminal(player));
         }
     }

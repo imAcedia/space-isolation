@@ -55,6 +55,11 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
+        if (DayFader.instance != null && DayFader.instance.fading)
+        {
+            return;
+        }
+
         if (handlingDialogue)
         {
             HandleDialogue();
@@ -64,7 +69,9 @@ public class PlayerInput : MonoBehaviour
         if (isInteracting) return;
 
         HandleMovementInput();
-        HandleInteraction();
+
+        if (GameStats.Instance.AvailableAction > 0)
+            HandleInteraction();
     }
 
     private void HandleDialogue()

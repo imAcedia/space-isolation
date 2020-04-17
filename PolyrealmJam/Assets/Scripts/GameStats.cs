@@ -36,12 +36,23 @@ public class GameStats : MonoBehaviour
 
     public float powerLevel = 1f;
     public float oxygenLevel = 1f;
-    public int availableAction = 5;
     public bool haveEaten = true;
     public int powerCell = 0;
 
     public DayData[] dayDatas = new DayData[0];
 
+    public int availableAction = 5;
+    public int AvailableAction
+    {
+        get => availableAction;
+        set
+        {
+            availableAction = value;
+
+            if (availableAction <= 0)
+                EndDay();
+        }
+    }
     public static string playerName = "Bryan";
 
     public Machine engine = new Machine()
@@ -82,15 +93,13 @@ public class GameStats : MonoBehaviour
         return true;
     }
 
-    public void NextDay()
+    public void EndDay()
     {
         StartCoroutine(NextDayCo());
     }
 
     private IEnumerator NextDayCo()
     {
-        
-
         if (!SurvivedTheDay())
         {
             GameOver();
@@ -101,24 +110,34 @@ public class GameStats : MonoBehaviour
 
         if (currentDays >= dayDatas.Length)
         {
-            EndGame();
-            yield break;
+            RandomStat();
+        }
+        else
+        {
+            DayData currentDayData = dayDatas[currentDays];
+
+            if (currentDayData.navBroken) navigationSystem.isFixed = false;
+            if (currentDayData.oxGenBroken) oxygenGenerator.isFixed = false;
+            if (currentDayData.materializerBroken) materializer.isFixed = false;
         }
 
-        DayData currentDayData = dayDatas[currentDays];
+        DayFader.instance.FadeOutToBlack("Day " + currentDays, powerLevel + "% Power remaining...");
+    }
 
-        if (currentDayData.navBroken) navigationSystem.isFixed = false;
-        if (currentDayData.oxGenBroken) oxygenGenerator.isFixed = false;
-        if (currentDayData.materializerBroken) materializer.isFixed = false;
+    public void RandomStat()
+    {
+        if (Random.value <= 0.1f) navigationSystem.isFixed = false;
+        if (Random.value <= 0.1f) oxygenGenerator.isFixed = false;
+        if (Random.value <= 0.1f) materializer.isFixed = false;
     }
 
     public void GameOver()
     {
-
+        DayFader.instance.FadeOutToBlackEnd("Game Over", string.Format("You survived for {0} days without anybody besides yourself...", currentDays));
     }
 
     public void EndGame()
     {
-
+        DayFader.instance.FadeOutToBlackEnd("Game Over", string.Format("You survived for {0} days without anybody besides yourself...", currentDays));
     }
 }
