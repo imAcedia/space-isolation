@@ -76,7 +76,7 @@ TextureImporter:
     second: Fix5
   - first:
       213: 7216167048295576402
-    second: Bryan_8
+    second: Bryan_8 pickup
   - first:
       213: 2371353759792840230
     second: Bryan_9
@@ -104,6 +104,93 @@ TextureImporter:
   - first:
       213: -9042716445941464082
     second: Climb3
+  - first:
+      213: -578283420345594966
+    second: Bryan_0 run
+  - first:
+      213: -8664532653758219236
+    second: Bryan_1
+  - first:
+      213: 3499435346651541349
+    second: Bryan_2
+  - first:
+      213: 3045519502903181841
+    second: Bryan_3
+  - first:
+      213: -3891170717985507231
+    second: Bryan_4
+  - first:
+      213: 7171355409849968936
+    second: Bryan_5
+  - first:
+      213: -1861671541594584340
+    second: Bryan_6 idle
+  - first:
+      213: -7851277558857225270
+    second: Bryan_7
+  - first:
+      213: -5444255578436231808
+    second: Bryan_14 interact
+  - first:
+      213: -947020537530363915
+    second: Bryan_15
+  - first:
+      213: -558999100948828132
+    second: Bryan_16
+  - first:
+      213: -3745572972051919492
+    second: Bryan_17
+  - first:
+      213: 1249579431635431037
+    second: Bryan_18 fix
+  - first:
+      213: -2651705621280819838
+    second: Bryan_19
+  - first:
+      213: 6252839765172211863
+    second: Bryan_20
+  - first:
+      213: 2821587154337669134
+    second: Bryan_21
+  - first:
+      213: -970288863984334554
+    second: Bryan_22
+  - first:
+      213: 1197330759787975327
+    second: Bryan_23
+  - first:
+      213: -7847980004291496535
+    second: Bryan_24 climb
+  - first:
+      213: -6208196049878242646
+    second: Bryan_25
+  - first:
+      213: -3463479450597701584
+    second: Bryan_26
+  - first:
+      213: -7697846885871060780
+    second: Bryan_27
+  - first:
+      213: -8655574195935339649
+    second: Bryan_28 wake
+  - first:
+      213: 7830773785056758150
+    second: Bryan_29
+  - first:
+      213: -4352039599886483866
+    second: Bryan_30
+  - first:
+      213: 4392677393677679451
+    second: Bryan_31
+  - first:
+      213: 5232149721680012037
+    second: Bryan_32
+  - first:
+      213: 7796441736428786206
+    second: Bryan_33
+  - first:
+      213: 6077257304096231477
+    second: Bryan_34
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -200,11 +287,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Run0
+      name: Bryan_0 run
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
+        y: 192
         width: 32
         height: 32
       alignment: 7
@@ -214,18 +301,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca01005a54988014383bff21a7db3ede
-      internalID: -2222007809911781411
+      spriteID: 982c4bad5bfe38142b15eea6174fc827
+      internalID: -578283420345594966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run1
+      name: Bryan_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 160
+        y: 192
         width: 32
         height: 32
       alignment: 7
@@ -235,18 +322,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d850854c128079f4fb87ea88b8165261
-      internalID: 4897918154395252837
+      spriteID: 6c4b49cbb65edd74ebb8d30a16e7cc29
+      internalID: -8664532653758219236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run2
+      name: Bryan_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 160
+        y: 192
         width: 32
         height: 32
       alignment: 7
@@ -256,18 +343,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0c10cacbfebe5b47b43a1e1542b02eb
-      internalID: -1575441167174257634
+      spriteID: 1e485526cf365a44b9cdcc6b68d60589
+      internalID: 3499435346651541349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run3
+      name: Bryan_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 160
+        y: 192
         width: 32
         height: 32
       alignment: 7
@@ -277,18 +364,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83e3cba23873b3a4e936d0e97d0e34be
-      internalID: 8416705206055012145
+      spriteID: 330f29180ca0d824bb0b41dc8bfa4bcf
+      internalID: 3045519502903181841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run4
+      name: Bryan_4
       rect:
         serializedVersion: 2
         x: 128
-        y: 160
+        y: 192
         width: 32
         height: 32
       alignment: 7
@@ -298,17 +385,38 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 230e638d7095bf149ad329a5c383061c
-      internalID: -5001087895999947297
+      spriteID: f7a8bf532b24f0945ab03d3562437090
+      internalID: -3891170717985507231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run5
+      name: Bryan_5
       rect:
         serializedVersion: 2
         x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a0a6dda6869934688296c38cc14e18
+      internalID: 7171355409849968936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bryan_6 idle
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 160
         width: 32
         height: 32
@@ -319,38 +427,38 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0752340066cb7c4fa0c8de20b56c681
-      internalID: 5324182152525945475
+      spriteID: 4e25bf59ea9bf584f8a5432af4bc7d4e
+      internalID: -1861671541594584340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a6df9b32caac49409c428d6e2efccfb
-      internalID: 7070746124852730356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle1
+      name: Bryan_7
       rect:
         serializedVersion: 2
         x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad5b3c11d645cb49ab27798ccb64f88
+      internalID: -7851277558857225270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bryan_8 pickup
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 128
         width: 32
         height: 32
@@ -361,28 +469,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64f0c12572f512b468924d87daadfce8
-      internalID: 318718824532238414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bryan_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3fceb5afe71a331498925fef6aabae5e
+      spriteID: c7b6bd0f086683a429cd6ac3299a96cc
       internalID: 7216167048295576402
       vertices: []
       indices: 
@@ -393,7 +480,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -403,7 +490,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a0ef394b21b88d46a92bef6e697c4f6
+      spriteID: eabf2b6bd14585f4cbb60a1fdc83f64c
       internalID: 2371353759792840230
       vertices: []
       indices: 
@@ -414,7 +501,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -424,7 +511,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7eb1cc80e5f320446a4de74ae95ca748
+      spriteID: 96cf26b29c6bd8b4cb7ed0af957912bf
       internalID: -4971954172258169316
       vertices: []
       indices: 
@@ -435,7 +522,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -445,7 +532,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95d8811e70cec404a8c935db2735781b
+      spriteID: 3472ebfdf335d9f439f4954bb2ea54bc
       internalID: 6682708012283227390
       vertices: []
       indices: 
@@ -456,7 +543,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -466,7 +553,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06e99d2b00b57a94d884fe0f8d77619e
+      spriteID: 89fd91673617bf848b86be93bf9d2a1a
       internalID: 6386114314497087551
       vertices: []
       indices: 
@@ -477,6 +564,27 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e026ca84b547d64781636e241a12ca5
+      internalID: -1340023148333245707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bryan_14 interact
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 96
         width: 32
         height: 32
@@ -487,14 +595,77 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5971758cf6093464280e0a5d7c3040ea
-      internalID: -1340023148333245707
+      spriteID: 369877e3e97384d4d88e550aa3931c21
+      internalID: -5444255578436231808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Push0
+      name: Bryan_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709b02fb56212de4785491ec713f7d7b
+      internalID: -947020537530363915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bryan_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9cb8ed340cc5640b163a3a0dece71b
+      internalID: -558999100948828132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bryan_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040fbf2bdc3b6b74ca4db50c230791a7
+      internalID: -3745572972051919492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bryan_18 fix
       rect:
         serializedVersion: 2
         x: 0
@@ -508,14 +679,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a76dcb79cac95246874bd007b24b6cb
-      internalID: -7139197265573818251
+      spriteID: d8db27fb062b39b45b3642488579a6b9
+      internalID: 1249579431635431037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Push1
+      name: Bryan_19
       rect:
         serializedVersion: 2
         x: 32
@@ -529,14 +700,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a09cd2d157776954f9fc89c21e20fe35
-      internalID: -267920735694888827
+      spriteID: 4dfb1de180cc72748ac79ce0640287fb
+      internalID: -2651705621280819838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Push2
+      name: Bryan_20
       rect:
         serializedVersion: 2
         x: 64
@@ -550,14 +721,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3e74b5168533fd408963c230961048b
-      internalID: -8302585026265233259
+      spriteID: c684e5d7629571443be1636266801c3b
+      internalID: 6252839765172211863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Push3
+      name: Bryan_21
       rect:
         serializedVersion: 2
         x: 96
@@ -571,102 +742,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f839f39bfd085f4ab076d221c27b54d
-      internalID: 5926370187478936578
+      spriteID: eeff240c0c6084341aa2a1c2acb9a13f
+      internalID: 2821587154337669134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fix0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b7c8e1fc702b3c4ebc242c979083d32
-      internalID: -1990640029392568907
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fix1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f3ecd13047a12148a3ca8c84bd32357
-      internalID: -8227251305613686460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fix2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30e0b2acb48ca1946a03d9a2d681c91f
-      internalID: -9148517821094107182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fix3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe21349037fdac54990d710f626fdbbe
-      internalID: -3108522277209952553
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fix4
+      name: Bryan_22
       rect:
         serializedVersion: 2
         x: 128
-        y: 32
+        y: 64
         width: 32
         height: 32
       alignment: 7
@@ -676,17 +763,38 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 357fb18f82e0da641a60b626183afed8
-      internalID: 9017864843231601343
+      spriteID: 6731ccc75fc3dee49a068e384986732a
+      internalID: -970288863984334554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fix5
+      name: Bryan_23
       rect:
         serializedVersion: 2
         x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bd9fd530e362b4b8cb2ac844656cab
+      internalID: 1197330759787975327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bryan_24 climb
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 32
         width: 32
         height: 32
@@ -697,14 +805,77 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c54d4dcee7bff34aa572e4419ac8706
-      internalID: 7807418501981692739
+      spriteID: 9cd954d0f979188498d6dc2126d6002f
+      internalID: -7847980004291496535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Climb0
+      name: Bryan_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0972f66eb2052439853a1bf625ec21
+      internalID: -6208196049878242646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bryan_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8604a0e116fa34baf077e42f791578
+      internalID: -3463479450597701584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bryan_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf4c537e3a48a540af79f5923a31477
+      internalID: -7697846885871060780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bryan_28 wake
       rect:
         serializedVersion: 2
         x: 0
@@ -718,14 +889,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d475059ace5238d45b2f28ec523b714a
-      internalID: 1105148210219271470
+      spriteID: bca17145a6236b74ebf318c476b14d29
+      internalID: -8655574195935339649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Climb1
+      name: Bryan_29
       rect:
         serializedVersion: 2
         x: 32
@@ -739,14 +910,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4091edbc663bd56468ba108da1398f16
-      internalID: -7663087623404977947
+      spriteID: b57c7cbbf074d714d93a3e4c819af31a
+      internalID: 7830773785056758150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Climb2
+      name: Bryan_30
       rect:
         serializedVersion: 2
         x: 64
@@ -760,14 +931,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2988756cc6b306040bde702dd77bad8d
-      internalID: 5383075509224287196
+      spriteID: a3159f2eddcd72f48bbb45f15445c3cb
+      internalID: -4352039599886483866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Climb3
+      name: Bryan_31
       rect:
         serializedVersion: 2
         x: 96
@@ -781,8 +952,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3477bf9575dd8545a9d4e1b6a568ded
-      internalID: -9042716445941464082
+      spriteID: 000622eb6413b4b478144872fa82f5d6
+      internalID: 4392677393677679451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bryan_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74bdad00eca81234d839f68c69129a9a
+      internalID: 5232149721680012037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bryan_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1772d2b50da1f43a0a5d30914de0a0
+      internalID: 7796441736428786206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bryan_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e7af879dabde241be91af148a964ea
+      internalID: 6077257304096231477
       vertices: []
       indices: 
       edges: []

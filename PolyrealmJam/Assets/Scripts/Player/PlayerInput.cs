@@ -31,6 +31,8 @@ public class PlayerInput : MonoBehaviour
     private void StartDialogue() => handlingDialogue = true;
     private void EndDialogue() => handlingDialogue = false;
 
+    SoundSystem soundSystem;
+
     private void Awake()
     {
         movement = GetComponent<PlayerMovement>();
@@ -41,6 +43,8 @@ public class PlayerInput : MonoBehaviour
         dialogueManager = FindObjectOfType<DialogueManager>();
         dialogueManager.OnDialogueStart += StartDialogue;
         dialogueManager.OnDialogueEnd += EndDialogue;
+
+        soundSystem = FindObjectOfType<SoundSystem>();
     }
 
     private void OnDestroy()
@@ -135,6 +139,8 @@ public class PlayerInput : MonoBehaviour
 
             movement.moveInput = Vector2.zero;
             interactionCanvas.enabled = false;
+
+            soundSystem.PlaySfx("pickup");
         }
     }
     private void OnDrawGizmosSelected()
