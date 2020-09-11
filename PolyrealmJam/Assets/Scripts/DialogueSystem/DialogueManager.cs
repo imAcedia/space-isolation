@@ -34,6 +34,8 @@ public class DialogueManager : MonoBehaviour
 
     #endregion
 
+
+
     public event Action OnDialogueStart;
     public event Action OnDialogueEnd;
 
