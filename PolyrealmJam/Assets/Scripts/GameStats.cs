@@ -121,7 +121,7 @@ public class GameStats : MonoBehaviour
             if (currentDayData.materializerBroken) materializer.isFixed = false;
         }
 
-        DayFader.instance.FadeOutToBlack("Day " + currentDays, powerLevel + "% Power remaining...");
+        DayFader.instance.FadeOutToBlack("Day " + currentDays, Mathf.FloorToInt( powerLevel * 100) + "% Power remaining...");
     }
 
     public void RandomStat()
